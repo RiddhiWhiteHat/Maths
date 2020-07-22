@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7RC4Xqus-Cl6TQIbARRGmNSLthfp2aIVDGA&usqp=CAU"/>
+            <title> Maths</title>
+            <meta charset="utf-8"/>
+            <style>
+                html, body {
+                    background-color: beige;
+                }
+
+                h1 {
+                    font-size: 2.3rem;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                    text-align: center;
+                    background-color: lightcoral;
+                    color: whitesmoke;
+                }
+
+                #upper, #lower, #ques, #score {
+                    min-width: 250px;
+                }
+
+                #ques, #score {
+                    border: 3px dashed crimson;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    font-family: cursive;
+                    background-color: aliceblue;
+                }
+
+                #upper, #lower {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-evenly;
+                    background-color: burlywood;
+                    border-right: 3px solid crimson;
+                    border-left: 3px solid crimson;
+                }
+
+                button {
+                    padding: 1rem;
+                    margin: 0.5rem 0.5rem;
+                    border: 2px outset black;
+                    border-radius: 15%;
+                    background-color: blanchedalmond;
+                    min-width: 150px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1rem;
+                }
+
+                button:hover {
+                    background-color: lightgreen;
+                    cursor: pointer;
+                }
+
+                button:active {
+                    background-color: gold;
+                }
+
+                #upper {
+                    border-top: 3px solid crimson;
+                    margin-top: 2rem;
+                }
+
+                #lower {
+                    border-bottom: 3px solid crimson;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    margin: 0rem;
+                }
+
+
+            </style>
+        </head>
+    
+        <body onload="init();">
+            <h1>Welcome to a Short Maths quiz!</h1>
+            <div id="ques"></div>
+            <div id="upper">
+                <button id="b1" onclick="gotinput('c1');"></button>
+                <button id="b2" onclick="gotinput('c2');"></button>
+            </div>
+            <div id="lower">
+                <button id="b3" onclick="gotinput('c3');"></button>
+                <button id="b4" onclick="gotinput('c4');"></button>
+            </div>
+            <div id="score"></div>
+            <script src="sketch.js"></script>
+        </body>
+    </html>
